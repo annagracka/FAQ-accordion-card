@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body {
+    /* position: absolute; */
+    left: 0px;
+    top: 0px;
+    height: 100vh;
+    background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+    font-family: Kumbh Sans;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+}
+
+h2 {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+
+}
+
+.container {
+    display: inline-flex;
+    width: 57.5rem;
+    height: 31.813rem;
+    background: #FFFFFF;
+    box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+    border-radius: 23px;
+    left: 281px;
+    right: 230px;
+    top: 130px;
+    bottom: 129px;
+}
+
+/* do ilustracji */
+.mentionIsometric {
+    left: -84px;
+    top: 70px;
+}
+
+.mailbox {
+    position: absolute;
+    z-index: 1;
+    top: 335.125px;
+    left: 238.93px;
+}
