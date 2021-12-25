@@ -22,9 +22,7 @@ h2 {
 
 h3 {
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 14px;
 }
 
 section {
@@ -45,7 +43,6 @@ article {
 article > svg {
     float: right;
     padding-top: 8px;
-    /* padding-top: 18px; */
 }
 
 article:hover {
@@ -56,7 +53,7 @@ article:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: right;
-    position:relative;
+    position: relative;
     width: 57.5rem;
     height: 31.813rem;
     background: #FFFFFF;
@@ -81,4 +78,12 @@ article:hover {
     position: absolute;
     z-index: 1;
     transform: translate(-562.5%, 125%);
+}
+
+#answer {
+    position: relative;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    max-height: 0;
+    /* transition: height 1s ease-out; */
 }

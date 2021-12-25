@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width" initial-scale=1.0">
     <link rel="stylesheet" href="/src/styles.css">
     <title>Document</title>
 </head>
@@ -122,12 +122,17 @@
     
     <section class="faq">
         <h1>FAQ</h1>
-        <article>
+        <article id="art" onclick="displayAnswer()">
                 How many team members can I invite?
                     <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 0.798645L5 4.79865L9 0.798645" stroke="#F47B56" stroke-width="2"/>
+                        <path id="test" d="M1 0.798645L5 4.79865L9 0.798645" stroke="#F47B56" stroke-width="2"/>
                     </svg>
-                
+                <div id="answer">
+                    <h3>
+                        The Element interface's animate() method is a shortcut method which creates a new Animation,
+                        applies it to the element, then plays the animation.
+                    </h3>
+                </div>
         </article>
         <article>
             How many Manny?
@@ -155,5 +160,6 @@
         </article>
     </section>
 </div>
+<script src="src/app.js"></script>
 </body>
 </html>
