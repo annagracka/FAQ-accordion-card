@@ -38,16 +38,23 @@ section {
 article {
     border-bottom: 0.5px solid #E8E8EA;
     padding: 18px 0 18px 0;
+    cursor: pointer;
+    z-index: 2;
 }
 
 article > svg {
-    /* right: 0; */
-    /* justify-content: right; */
-    /* justify-items: right; */
+    float: right;
+    padding-top: 8px;
+    /* padding-top: 18px; */
+}
+
+article:hover {
+    color: #F47B56;
 }
 
 .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: right;
     position:relative;
     width: 57.5rem;
