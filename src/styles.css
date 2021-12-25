@@ -1,52 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
 body {
-    /* position: absolute; */
-    left: 0px;
-    top: 0px;
     height: 100vh;
     background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
     font-family: Kumbh Sans;
 }
 
+h1, h2, h3 {
+    text-align: left;
+    color: #1E1F36;}
+
 h1 {
     font-size: 32px;
     font-weight: 700;
     line-height: 32px;
-    text-align: left;
 }
 
 h2 {
+
+}
+
+h3 {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 14px;
-    text-align: left;
+}
 
+section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+    margin-right: 7.5rem;
+    width: 360px;
+}
+
+article {
+    border-bottom: 0.5px solid #E8E8EA;
+    padding: 18px 0 18px 0;
+}
+
+article > svg {
+    /* right: 0; */
+    /* justify-content: right; */
+    /* justify-items: right; */
 }
 
 .container {
-    display: inline-flex;
+    display: flex;
+    justify-content: right;
+    position:relative;
     width: 57.5rem;
     height: 31.813rem;
     background: #FFFFFF;
     box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
     border-radius: 23px;
-    left: 281px;
-    right: 230px;
-    top: 130px;
-    bottom: 129px;
+    margin:auto;
+    top: 8.125rem;
+    left: 42px;
 }
 
 /* do ilustracji */
-.mentionIsometric {
-    left: -84px;
-    top: 70px;
+
+.illustration {
+    position: absolute;
+    transform: translate(-8.25%, 13.25%);
+    width: 100%;
+    height: 100%;
+    z-index: 0;
 }
 
-.mailbox {
+.package {
     position: absolute;
     z-index: 1;
-    top: 335.125px;
-    left: 238.93px;
+    transform: translate(-562.5%, 125%);
 }
