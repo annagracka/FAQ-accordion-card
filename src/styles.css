@@ -86,7 +86,6 @@ article:hover {
 .answer {
     position: relative;
     overflow: hidden;
-    background-color: #FFFFFF;
     max-height: 0;
 }
 
