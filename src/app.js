@@ -28,7 +28,6 @@ function showAnswer() {
     };
 }
 
-
 function hideAnswer() {
     const activeAnswers = document.querySelectorAll('.active')
 

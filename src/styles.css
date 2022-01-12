@@ -43,7 +43,7 @@ article {
     z-index: 2;
 }
 
-article > svg {
+.arrow {
     float: right;
     padding-top: 8px;
 }
@@ -80,7 +80,7 @@ article:hover {
 .package {
     position: absolute;
     z-index: 1;
-    transform: translate(-427.5%, 115%);
+    transform: translate(-426.5%, 115%);
 }
 
 .answer {
