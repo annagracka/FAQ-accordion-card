@@ -1,28 +1,25 @@
-const elem = document.getElementById('test')
+const elem = document.getElementById('art')
 const arrow = elem.getElementsByTagName('path');
-const answer = document.getElementById('answer');
+const question = document.querySelectorAll('article');
+const answer = document.getElementsByClassName('.answer')
 
-elem.addEventListener(onclick, displayAnswer);
-let id = null;
 
-function displayAnswer() {
-    clearInterval(id);
-    id = setInterval(rotateArrow, 1)
-    let deg = 0;
 
-    function rotateArrow() {
-        if (deg === 180) {
-            clearInterval(id);
-        } else {
-            deg+=5;
-            elem.style.transform = `rotate(${deg}deg)`;
-            elem.style.transformOrigin = `50% 50%`;
-            answer.style.overflow = 'visible';
-            answer.style.maxHeight = answer.scrollHeight + 'px';
-        }
-    }
-}
+question.forEach(element => {
+    element.addEventListener('click', showText)
+})
+
 
 function showText() {
-    
+    const elem = this.childNodes.length;
+    const message = this.childNodes[elem - 2];
+
+    this.style.color = '#000';
+    this.style.fontWeight = 700;
+    this.style.paddingBottom = 0;
+
+    message.style.overflow = 'visible';
+    message.style.maxHeight = '100%';
+
+
 }

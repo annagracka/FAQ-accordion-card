@@ -19,7 +19,8 @@ h1 {
 }
 
 h2 {
-
+    font-size: 16.5px;
+    font-weight: 400;
 }
 
 h3 {
@@ -82,10 +83,14 @@ article:hover {
     transform: translate(-427.5%, 115%);
 }
 
-#answer {
+.answer {
     position: relative;
     overflow: hidden;
     background-color: #FFFFFF;
     max-height: 0;
-    /* transition: height 1s ease-out; */
+}
+
+.answer > h3 {
+    display: block;
+    line-height: 20px;
 }
