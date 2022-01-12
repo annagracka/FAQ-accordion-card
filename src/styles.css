@@ -4,6 +4,8 @@ body {
     height: 100vh;
     background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
     font-family: Kumbh Sans;
+    box-sizing: content-box;
+    overflow-y: hidden;
 }
 
 h1, h2, h3 {
@@ -29,8 +31,8 @@ section {
     display: flex;
     flex-direction: column;
     margin-top: 2.5rem;
-    margin-right: 7.5rem;
-    width: 360px;
+    margin-right: 6rem;
+    width: 400px;
 }
 
 article {
@@ -54,21 +56,21 @@ article:hover {
     flex-wrap: wrap;
     justify-content: right;
     position: relative;
-    width: 57.5rem;
+    width: 60rem;
     height: 31.813rem;
     background: #FFFFFF;
     box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
     border-radius: 23px;
     margin:auto;
-    top: 8.125rem;
-    left: 42px;
+    top: 6.125rem;
+    left: 0.8rem;
 }
 
 /* do ilustracji */
 
 .illustration {
     position: absolute;
-    transform: translate(-8.25%, 13.25%);
+    transform: translate(-3.3%, 0%);
     width: 100%;
     height: 100%;
     z-index: 0;
@@ -77,7 +79,7 @@ article:hover {
 .package {
     position: absolute;
     z-index: 1;
-    transform: translate(-562.5%, 125%);
+    transform: translate(-427.5%, 115%);
 }
 
 #answer {
