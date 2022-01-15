@@ -44,8 +44,15 @@ article {
 }
 
 .arrow {
-    float: right;
     padding-top: 8px;
+    float: right;
+    transition: all .5s ease-in;
+}
+
+.arrow-rotate {
+    padding-bottom: 6px;
+    transform: rotate(180deg);
+    transform-origin: center;
 }
 
 article:hover {
