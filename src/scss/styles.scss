@@ -1,0 +1,86 @@
+@import 'fonts';
+@import 'colors';
+
+body {
+    background: linear-gradient(180deg, $canvas-top 0%, $canvas-bottom 100%);
+    color: $text-primary;
+    font-family: Kumbh Sans;
+    height: 100vh;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+hr {
+    border-top: 0.5px solid $neutral-secondary;
+}
+
+.box {
+    position: absolute;
+    width: 57.5rem;
+    height: 31.813rem;
+    background: url(./../../assets/illustration.svg);
+    background-position: -30px;
+    background-color: $neutral-primary;
+    box-shadow: 0px 50px 50px -20px $box-shadow;
+    border-radius: 23px;
+    top: 50%;
+    right: 49%;
+    transform: translate(50%, -50%);
+}
+
+.illustration__package {
+    position: absolute;
+    top: 57.5%;
+    left: -21%;
+    transform: translate(50%, -50%);
+}
+
+.box__faq {
+    position: absolute;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+    width: 400px;
+}
+
+.faq__item {
+    padding: 18px 0 18px 0;
+    cursor: pointer;
+}
+
+.faq__item:hover {
+    color: $text-secondary;
+}
+
+.faq__question {
+    position: relative;
+}
+
+.faq__arrow {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translate(-50%);
+    transition: 0.5s;
+}
+
+.faq__answer {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+// do poprawy
+.question__with-answer .faq__arrow {
+    transform: rotate(180deg);
+    transform-origin: center center;
+}
+
+.question__with-answer .faq__answer {
+    height: 100px;
+}

@@ -1,0 +1,29 @@
+{
+  "name": "faq-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass ./src/scss/styles.scss ./src/scss/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annagaca/FAQ-accordion-card.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/annagaca/FAQ-accordion-card/issues"
+  },
+  "homepage": "https://github.com/annagaca/FAQ-accordion-card#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "npm": "^8.5.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.49.8"
+  }
+}
