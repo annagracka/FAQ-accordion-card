@@ -114,6 +114,10 @@ hr {
     &__question {
         position: relative;
 
+        & h2 {
+            z-index: 0;
+        }
+
         & h2:hover {
             color: $text-secondary;
             transition: all 0.2s ease;
@@ -138,18 +142,18 @@ hr {
     }
 }
 
-.question__with-answer h2 {
+.question--with-answer h2 {
     color: $text-primary;
     font-weight: 700;
 }
 
-// do poprawy
-.question__with-answer .faq__arrow {
+// to correct
+.question--with-answer .faq__arrow {
     transform: rotate(180deg);
     transform-origin: center center;
 }
 
-.question__with-answer .faq__answer {
+.question--with-answer .faq__answer {
     padding-top: 12px;
     height: 45px;
 }
