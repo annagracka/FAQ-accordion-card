@@ -1,5 +1,6 @@
 @import 'fonts';
 @import 'colors';
+@import 'media_queries';
 
 body {
     background: linear-gradient(180deg, $canvas-top 0%, $canvas-bottom 100%);
@@ -14,7 +15,29 @@ body {
   }
 
 hr {
-    border-top: 0.5px solid $neutral-secondary;
+    border-top: 0.1px solid $neutral-secondary;
+}
+
+.illustration__package {
+    position: absolute;
+    transform: translate(-47%, 115%);
+
+    @include tablet {
+        display: none;
+    }
+}
+
+.illustration__mobile {
+    display: none;
+    
+    @include tablet {
+        display: block;
+        position: absolute;
+        top: -105px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 237px;
+    }
 }
 
 .box {
@@ -29,50 +52,95 @@ hr {
     top: 50%;
     right: 49%;
     transform: translate(50%, -50%);
+    z-index: 0;
+
+    @include desktop {
+        width: 80vw;
+    }
+
+    @include tablet {
+        background: none;
+        background-color: $neutral-primary;
+        width: 80vw;
+    }
+    
+    @include mobile {
+        right: 50%;
+        width: 20.438rem;
+        height: 33.438rem;
+    }
+
+    &__faq {
+        position: absolute;
+        left: 51%;
+        display: flex;
+        flex-direction: column;
+        width: 360px;
+
+        @include desktop {
+            width: 40%;
+            left: 55%;
+        }
+
+        @include tablet {
+            display: block;
+            position: relative;
+            left: 0;
+            margin: auto;
+            width: 80%;
+        }
+
+        @include mobile {
+            width: 280px;
+        }
+    }
 }
 
-.illustration__package {
-    position: absolute;
-    top: 57.5%;
-    left: -21%;
-    transform: translate(50%, -50%);
+.faq {
+    &__title {
+        margin: 3.75rem 0 1.5rem 0;
+
+        @include tablet {
+            margin: 8.25rem auto 1rem auto;
+            text-align: center;
+        }
+    }
+
+    &__item {
+        padding: 16px 0;
+        cursor: pointer;
+    }
+
+    &__question {
+        position: relative;
+
+        & h2:hover {
+            color: $text-secondary;
+            transition: all 0.2s ease;
+        }
+    }
+
+    &__arrow {
+        position: absolute;
+        right: 5%;
+        top: 50%;
+        transform: translate(-50%);
+        transition: 0.5s;
+    }
+
+    &__answer {
+        position: relative;
+        line-height: 18px;
+        width: 90%;
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s;
+    }
 }
 
-.box__faq {
-    position: absolute;
-    left: 50%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 2.5rem;
-    width: 400px;
-}
-
-.faq__item {
-    padding: 18px 0 18px 0;
-    cursor: pointer;
-}
-
-.faq__item:hover {
-    color: $text-secondary;
-}
-
-.faq__question {
-    position: relative;
-}
-
-.faq__arrow {
-    position: absolute;
-    right: 5%;
-    top: 50%;
-    transform: translate(-50%);
-    transition: 0.5s;
-}
-
-.faq__answer {
-    position: relative;
-    height: 0;
-    overflow: hidden;
-    transition: 0.5s;
+.question__with-answer h2 {
+    color: $text-primary;
+    font-weight: 700;
 }
 
 // do poprawy
@@ -82,5 +150,6 @@ hr {
 }
 
 .question__with-answer .faq__answer {
-    height: 100px;
+    padding-top: 12px;
+    height: 45px;
 }

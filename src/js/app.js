@@ -1,4 +1,4 @@
-const faq = document.querySelectorAll('.faq__question')
+const faq = document.querySelectorAll('.faq__item')
 
 faq.forEach(question => {
     question.addEventListener('click', function() {
